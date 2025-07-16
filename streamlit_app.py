@@ -11,14 +11,14 @@ def load_data():
 df = load_data()
 
 # タイトル
-st.title("計算問題 自己チェック（4問）")
+st.title("課題3　計算問題 自己チェック")
 
 # 入力欄
 student_id = st.text_input("学生番号（下3桁）を入力", max_chars=3)
-answer1 = st.text_input("（1）のあなたの解答（例：1.76）")
-answer2 = st.text_input("（2）のあなたの解答（例：1.98）")
-answer3 = st.text_input("（3）のあなたの解答（例：1.83）")
-answer4 = st.text_input("（4）のあなたの解答（例：2.30）")
+answer1 = st.text_input("（1）のあなたの解答　小数点以下第3位を四捨五入（例：1.76）")
+answer2 = st.text_input("（2）のあなたの解答　小数点以下第3位を四捨五入（例：1.98）")
+answer3 = st.text_input("（3）のあなたの解答　小数点以下第3位を四捨五入（例：1.83）")
+answer4 = st.text_input("（4）のあなたの解答　小数点以下第3位を四捨五入（例：2.30）")
 
 # 判定ボタン
 if st.button("判定する"):
